@@ -1,0 +1,264 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    color: #FFF;
+    text-decoration: none;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background: black url("../image/header/bg/Header\ BG.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+.menu-flex {
+    display: flex;
+    flex-direction: row;   
+}
+.header-navigation {
+    justify-content: space-between;
+    box-sizing: content-box;
+    position: relative;
+}
+.header-navigation_bottom--line {
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #5f5f5f;
+    box-sizing: content-box;
+}
+.header-navigation_logo {
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+    padding-top: 5px;
+}
+.header-navigation_menu {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 15.96px;
+    z-index: 1;
+}
+.header-navigation_menu li {
+    line-height: 89px;
+    margin-left: 69px;
+    border-bottom: 1px solid transparent;
+}
+.header-navigation_menu li:hover {
+    border-bottom: 1px solid white;
+}
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 3px;
+}
+.header-text h1 {
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-top: 348px;
+}
+.header-text h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 47px;
+    margin-top: 22px;
+    text-align: center;
+    margin-bottom: 340px;
+}
+.header-member {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    position: relative;
+    text-transform: uppercase;
+}
+.header-member_login,
+.header-member_register {
+    width: 50%;
+    height: 121px;
+    transform: skewx(-13deg) translateX(-1px);
+    box-sizing: content-box;
+}
+.header-member_register {
+    right: 4px;
+}
+.header-member div>*{
+    transform: skewx(13deg);
+}
+.header-member_login {
+    background-color: #21424a;
+    position: relative;
+}
+.header-member_register {
+    background-color: #2fac6c;
+    position: relative;
+}
+.helper {
+    position: absolute;
+    height: 121px;
+    width: 700px;
+}
+.gray {
+    background-color: #21424a;
+    left: -500px; 
+}
+.green {
+    background-color: #2fac6c;
+    right: -500px;
+}
+.header-member_login a {
+    position: absolute;
+    right: 262px;
+    top: 50px;
+}
+.header-member_register a {
+    position: absolute;
+    left: 255px;
+    top: 50px;
+}
+.domain * {
+    color: black;
+}
+.domain .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 890px;
+}
+.domain-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 87px;  
+}
+.domain-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: light;
+    font-size: 16px;
+    margin-top: 27px;
+    padding-right: 5px;
+}
+.domain-table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.domain-form {
+    width: 100%;
+    position: relative;
+    margin-top: 49px;
+}
+.world-wide {
+    position: absolute;
+    left: 14px;
+    height: 32px;
+    top: 9px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-right: 1px solid #d9d9d9;
+    padding-right: 14px;
+}
+.world-wide p {
+    margin-top: 7px;
+    margin-left: 2px;
+    color: #d9d9d9;
+}
+form input[placeholder] {
+    color: #868686;
+}
+.domain-select select,
+.domain-select i {
+    color: #d9d9d9;
+}
+.domain-form input {
+    margin: 0;
+    width: 713px;
+    height: 28px;
+    box-sizing: content-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 87px;
+    border: 1px solid #d9d9d9;
+}
+.domain-select {
+    display: block;
+    position: absolute;
+    height: 32px;
+    width: 86px;
+    top: 9px;
+    right: 2px;
+}
+.domain-select select {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    border-left: 1px solid #d9d9d9;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -2px;
+}
+.domain-select i {
+    position: absolute;
+    right: 14px;
+    top: 8px;
+}
