@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="carousel/slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
     <title>Ghosthost</title>
 </head>
 <body>
@@ -30,13 +31,19 @@
                 <h1>Hello!</h1>
                 <h2>We love our work...<br>And We're taking it seriously...</h2>
             </div>
-            <div class="header-member">
-                <div class="header-member_login"><a href="#">Login</a></div>
-                <div class="header-member_register"><a href="#">Register</a></div>
-                <div class="helper gray"></div>
-                <div class="helper green"></div>
-            </div>
         </div>  
+        <div class="header-member">
+            <div class="header-member_color">
+                <div class="header-member_login"><a href="#">Login</a></div>
+            </div>
+            <div class="header-member_color">
+                <div class="header-member_register"><a href="#">Register</a></div>
+            </div>
+            <!-- <div class="header-member_login"><a href="#">Login</a></div>
+            <div class="header-member_register"><a href="#">Register</a></div>
+            <div class="helper gray"></div>
+            <div class="helper green"></div> -->
+        </div>
     </header>
     <section class="domain">
         <div class="container">
@@ -51,12 +58,11 @@
                     <select name="" id="">
                         <option value=".com">.com</option>
                         <option value=".net">.net</option>
-                        <option value=".org">.net</option>
+                        <option value=".org">.org</option>
                     </select>
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <input type="text name="domain" placeholder="What do you want?">
-                
             </form>
             <div class="domain-table">
                 <table>
@@ -120,61 +126,91 @@
                             <p>Free Support</p>
                         </div>
                         <div class="packages-package_basic--price">
-
+                           <div class="packages-package_basic--price--cost">
+                               <span>$</span>
+                               <span>15</span>
+                               <span>/Mo</span>
+                           </div> 
+                           <div class="packages-package_basic--price--select">
+                               Select plan
+                           </div>
                         </div>
                 </div>
-                <div class="packages-package__basic">
+                <div class="packages-package__basic normal-package">
                         <div class="packages-package__basic--header">
-                            <div class="packages-package__basic--header--load-bar"><i class="fa fa-anchor"></i></div>
-                            <div class="packages-package__basic--header--title">Basic package</div>
+                            <div class="packages-package__basic--header--load-bar">
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="packages-package__basic--header--title">Normal package</div>
                         </div>
                         <div class="packages-package_basic--content">
-                            <p class="sp-between">Disc Space (GB) <span>50</span></p>
-                            <p class="sp-between">Subdomains <span>50</span></p>
-                            <p class="sp-between">Transfer (GB) <span>50</span></p>
-                            <p class="sp-between">Data bases <span>1</span></p>
-                            <p class="sp-between">Dashboards <span>1</span></p>
+                            <p class="sp-between">Disc Space (GB) <span>100</span></p>
+                            <p class="sp-between">Subdomains <span>100</span></p>
+                            <p class="sp-between">Transfer (GB) <span>100</span></p>
+                            <p class="sp-between">Data bases <span>2</span></p>
+                            <p class="sp-between">Dashboards <span>2</span></p>
                             <p>Control Panel & FTP</p>
                             <p>Free Support</p>
                         </div>
                         <div class="packages-package_basic--price">
-
+                            <div class="packages-package_basic--price--cost">
+                                <span>$</span>
+                                <span>30</span>
+                                <span>/Mo</span>
+                            </div> 
+                            <div class="packages-package_basic--price--select">
+                                Select plan
+                            </div>
                         </div>
                 </div>
-                <div class="packages-package__basic">
+                <div class="packages-package__basic big-package">
                         <div class="packages-package__basic--header">
-                            <div class="packages-package__basic--header--load-bar"><i class="fa fa-anchor"></i></div>
-                            <div class="packages-package__basic--header--title">Basic package</div>
+                            <div class="packages-package__basic--header--load-bar"><i class="fas fa-star"></i></div>
+                            <div class="packages-package__basic--header--title">Big package</div>
                         </div>
                         <div class="packages-package_basic--content">
-                            <p class="sp-between">Disc Space (GB) <span>50</span></p>
-                            <p class="sp-between">Subdomains <span>50</span></p>
-                            <p class="sp-between">Transfer (GB) <span>50</span></p>
-                            <p class="sp-between">Data bases <span>1</span></p>
-                            <p class="sp-between">Dashboards <span>1</span></p>
+                            <p class="sp-between">Disc Space (GB) <span>150</span></p>
+                            <p class="sp-between">Subdomains <span>150</span></p>
+                            <p class="sp-between">Transfer (GB) <span>150</span></p>
+                            <p class="sp-between">Data bases <span>4</span></p>
+                            <p class="sp-between">Dashboards <span>4</span></p>
                             <p>Control Panel & FTP</p>
                             <p>Free Support</p>
                         </div>
                         <div class="packages-package_basic--price">
-
+                            <div class="packages-package_basic--price--cost">
+                                <span>$</span>
+                                <span>40</span>
+                                <span>/Mo</span>
+                            </div> 
+                            <div class="packages-package_basic--price--select">
+                                Select plan
+                            </div>
                         </div>
                 </div>
-                <div class="packages-package__basic">
+                <div class="packages-package__basic biggest-package">
                         <div class="packages-package__basic--header">
-                            <div class="packages-package__basic--header--load-bar"><i class="fa fa-anchor"></i></div>
-                            <div class="packages-package__basic--header--title">Basic package</div>
+                            <div class="packages-package__basic--header--load-bar"><i class="far fa-gem"></i></div>
+                            <div class="packages-package__basic--header--title">Biggest package</div>
                         </div>
                         <div class="packages-package_basic--content">
-                            <p class="sp-between">Disc Space (GB) <span>50</span></p>
-                            <p class="sp-between">Subdomains <span>50</span></p>
-                            <p class="sp-between">Transfer (GB) <span>50</span></p>
-                            <p class="sp-between">Data bases <span>1</span></p>
-                            <p class="sp-between">Dashboards <span>1</span></p>
+                            <p class="sp-between">Disc Space (GB) <span>250</span></p>
+                            <p class="sp-between">Subdomains <span>250</span></p>
+                            <p class="sp-between">Transfer (GB) <span>250</span></p>
+                            <p class="sp-between">Data bases <span>6</span></p>
+                            <p class="sp-between">Dashboards <span>6</span></p>
                             <p>Control Panel & FTP</p>
                             <p>Free Support</p>
                         </div>
                         <div class="packages-package_basic--price">
-
+                            <div class="packages-package_basic--price--cost">
+                                <span>$</span>
+                                <span>70</span>
+                                <span>/Mo</span>
+                            </div> 
+                            <div class="packages-package_basic--price--select">
+                                Select plan
+                            </div>
                         </div>
                 </div>
             </div>
@@ -194,7 +230,14 @@
                             <p>Free Support</p>
                         </div>
                         <div class="packages-package_basic--price">
-
+                            <div class="packages-package_basic--price--cost">
+                                <span>$</span>
+                                <span>15</span>
+                                <span>/Mo</span>
+                            </div> 
+                            <div class="packages-package_basic--price--select">
+                                Select plan
+                            </div>
                         </div>
                 </div>
                 <div class="packages-package__basic">
@@ -212,7 +255,14 @@
                             <p>Free Support</p>
                         </div>
                         <div class="packages-package_basic--price">
-
+                            <div class="packages-package_basic--price--cost">
+                                <span>$</span>
+                                <span>15</span>
+                                <span>/Mo</span>
+                            </div> 
+                            <div class="packages-package_basic--price--select">
+                                Select plan
+                            </div>
                         </div>
                 </div>
                 <div class="packages-package__basic">
@@ -230,7 +280,14 @@
                             <p>Free Support</p>
                         </div>
                         <div class="packages-package_basic--price">
-
+                            <div class="packages-package_basic--price--cost">
+                                <span>$</span>
+                                <span>15</span>
+                                <span>/Mo</span>
+                            </div> 
+                            <div class="packages-package_basic--price--select">
+                                Select plan
+                            </div>
                         </div>
                 </div>
                 <div class="packages-package__basic">
@@ -248,11 +305,150 @@
                             <p>Free Support</p>
                         </div>
                         <div class="packages-package_basic--price">
-
+                            <div class="packages-package_basic--price--cost">
+                                <span>$</span>
+                                <span>15</span>
+                                <span>/Mo</span>
+                            </div> 
+                            <div class="packages-package_basic--price--select">
+                                Select plan
+                            </div>
                         </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="about">
+        <div class="container">
+            <div class="about-us--text">
+                <div class="about-us--text_title">
+                    <span>About </span><span>Us</span>
+                </div>
+                <div class="about-us--text_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent feugiat eget diam sit amet molestie.Curabitur. 
+                    ut ipsum bibendum tortor lacinia fermentum nec joeıa.
+                    Mauris at augue libero. Fusce posuere, sapien nec poır.
+                    Uaee augsuada sed mauris in tincidunt...
+                </div>
+            </div>
+            <div class="about-us--profiles">
+                <div class="about-us--profiles_profile">
+                    <div class="about-us--profiles_profile-image">
+                        <img src="image/profiles/jonny.jpg" alt="Jonny Doe">
+                    </div>
+                    <div class="about-us--profiles_profile-title">Jonny Doe</div>
+                    <div class="about-us--profiles_profile-profession">Designer</div>
+                    <div class="about-us--profiles_profile-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="about-us--profiles_profile">
+                    <div class="about-us--profiles_profile-image">
+                        <img src="image/profiles/john.png" alt="John Doe">
+                    </div>
+                    <div class="about-us--profiles_profile-title">Jonny Doe</div>
+                    <div class="about-us--profiles_profile-profession">Designer</div>
+                    <div class="about-us--profiles_profile-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="about-us--profiles_profile">
+                    <div class="about-us--profiles_profile-image">
+                        <img src="image/profiles/johnathan.png" alt="Johnathan Doe">
+                    </div>
+                    <div class="about-us--profiles_profile-title">Jonny Doe</div>
+                    <div class="about-us--profiles_profile-profession">Designer</div>
+                    <div class="about-us--profiles_profile-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comments">
+        <div class="container">
+            <div class="slider">
+                <div class="slider-slide">
+                    <p class="slider-slide__text">
+                        “Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
+                        interdum dolor pulvinar vitae.”  
+                    </p>
+                    <p class="slider-slide__author">John Doe</p>
+                </div>
+                <div class="slider-slide">
+                    <p class="slider-slide__text">
+                        “Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
+                        interdum dolor pulvinar vitae.”  
+                    </p>
+                    <p class="slider-slide__author">John Doe</p>
+                </div>
+                <div class="slider-slide">
+                    <p class="slider-slide__text">
+                        “Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
+                        interdum dolor pulvinar vitae.”  
+                    </p>
+                    <p class="slider-slide__author">John Doe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="functions">
+        <div class="container">
+            <div class="functions-one-function">
+                <div class="functions-one-function-header">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="functions-one-function-title">
+                    <p>Fast Servers</p>
+                </div>
+                <div class="functions-one-function-text">
+                    <p>Nulla dapibus neque augue, quis  tincidunt tortor aliquam vitae.</p>
+                </div>
+            </div>
+            <div class="functions-one-function">
+                <div class="functions-one-function-header blue">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <div class="functions-one-function-title">
+                    <p>Cloud Servers</p>
+                </div>
+                <div class="functions-one-function-text">
+                    <p>Nulla dapibus neque augue, quis  tincidunt tortor aliquam vitae.</p>
+                </div>
+            </div>
+            <div class="functions-one-function">
+                <div class="functions-one-function-header gray">
+                    <i class="fas fa-arrows-alt"></i>
+                </div>
+                <div class="functions-one-function-title">
+                    <p>Domain Transfer</p>
+                </div>
+                <div class="functions-one-function-text">
+                    <p>Nulla dapibus neque augue, quis  tincidunt tortor aliquam vitae.</p>
+                </div>
+            </div>
+            <div class="functions-one-function">
+                <div class="functions-one-function-header orange">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="functions-one-function-title">
+                    <p>Live Support</p>
+                </div>
+                <div class="functions-one-function-text">
+                    <p>Nulla dapibus neque augue, quis  tincidunt tortor aliquam vitae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="jQuerry/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="carousel/slick-1.8.1/slick/slick.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
